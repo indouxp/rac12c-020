@@ -1,0 +1,7 @@
+---
+
+- name: disable NetworkManager
+  systemd:
+    name   : NetworkManager
+    enabled: no
+    state  : stopped

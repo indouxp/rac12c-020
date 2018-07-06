@@ -1,0 +1,12 @@
+---
+- hosts:
+  - c7-1
+
+  become: yes
+  vars_files:
+    - roles/common/group_vars/all.yml
+
+  tasks:
+    - import_tasks: roles/common/tasks/setup-network.yml
+    - import_tasks: roles/common/tasks/make-sysctl.yml
+
