@@ -1,0 +1,120 @@
+---
+# インストール
+
+  - name: yum compat-libcap1
+    yum: name=compat-libcap1 state=latest
+
+  - name: yum binutils
+    yum: name=binutils state=latest
+
+  - name: yum compat-libstdc++-33
+    yum: name=compat-libstdc++-33 state=latest
+
+  - name: yum compat-libstdc++-33.i686
+    yum: name=compat-libstdc++-33.i686 state=latest
+
+  - name: yum gcc
+    yum: name=gcc state=latest
+
+  - name: yum gcc-c++
+    yum: name=gcc-c++ state=latest
+
+  - name: yum glibc
+    yum: name=glibc state=latest
+
+  - name: yum glibc.i686
+    yum: name=glibc.i686 state=latest
+
+  - name: yum glibc-devel
+    yum: name=glibc-devel state=latest
+
+  - name: yum glibc-devel.i686
+    yum: name=glibc-devel.i686 state=latest
+
+  - name: yum ksh
+    yum: name=ksh state=latest
+
+  - name: yum libgcc
+    yum: name=libgcc state=latest
+
+  - name: yum libgcc.i686
+    yum: name=libgcc.i686 state=latest
+
+  - name: yum libstdc++
+    yum: name=libstdc++ state=latest
+
+  - name: yum libstdc++.i686
+    yum: name=libstdc++.i686 state=latest
+
+  - name: yum libstdc++-devel
+    yum: name=libstdc++-devel state=latest
+
+  - name: yum libstdc++-devel.i686
+    yum: name=libstdc++-devel.i686 state=latest
+
+  - name: yum libaio
+    yum: name=libaio state=latest
+
+  - name: yum libaio.i686
+    yum: name=libaio.i686 state=latest
+
+  - name: yum libaio-devel
+    yum: name=libaio-devel state=latest
+
+  - name: yum libaio-devel.i686
+    yum: name=libaio-devel.i686 state=latest
+
+  - name: yum libXext
+    yum: name=libXext state=latest
+
+  - name: yum libXext.i686
+    yum: name=libXext.i686 state=latest
+
+  - name: yum libXtst
+    yum: name=libXtst state=latest
+
+  - name: yum libXtst.i686
+    yum: name=libXtst.i686 state=latest
+
+  - name: yum libX11
+    yum: name=libX11 state=latest
+
+  - name: yum libX11.i686
+    yum: name=libX11.i686 state=latest
+
+  - name: yum libXau
+    yum: name=libXau state=latest
+
+  - name: yum libXau.i686
+    yum: name=libXau.i686 state=latest
+
+  - name: yum libxcb
+    yum: name=libxcb state=latest
+
+  - name: yum libxcb.i686
+    yum: name=libxcb.i686 state=latest
+
+  - name: yum libXi
+    yum: name=libXi state=latest
+
+  - name: yum libXi.i686
+    yum: name=libXi.i686 state=latest
+
+  - name: yum make
+    yum: name=make state=latest
+
+  - name: yum sysstat
+    yum: name=sysstat state=latest
+
+  - name: yum unixODBC
+    yum: name=unixODBC state=latest
+
+  - name: yum unixODBC-devel
+    yum: name=unixODBC-devel state=latest
+
+  - name: yum zlib-devel
+    yum: name=zlib-devel state=latest
+
+  - name: yum zlib-devel.i686
+    yum: name=zlib-devel.i686 state=latest
+
