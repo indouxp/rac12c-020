@@ -1,13 +1,17 @@
 ---
 
-- name: copy 98-oracle.conf
-  copy:
-    src   : ../files/98-oracle.conf
-    dest  : /etc/sysctl.d/98-oracle.conf
-    mode  : 0644
-    owner : root
-    group : root
+  - name: copy 98-oracle.conf
+    copy:
+      src  : ../files/98-oracle.conf
+      dest : /etc/sysctl.d/98-oracle.conf
+      mode : 0644
+      owner: root
+      group: root
 
-- name: sysctl
-  shell: /sbin/sysctl -p
+  - name: sysctl -p
+    shell       : /sbin/sysctl -p
+    register    : result
+    changed_when: False
 
+  - name: ステータス
+    debug      : var=result.rc
