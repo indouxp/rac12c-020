@@ -8,5 +8,5 @@
 
   tasks:
     - import_tasks: roles/common/tasks/setup-network.yml
-    - import_tasks: roles/common/tasks/make-sysctl.yml
+    - import_tasks: roles/common/tasks/setup-sysctl.yml
 
