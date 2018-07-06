@@ -5,3 +5,9 @@
     name   : NetworkManager
     enabled: no
     state  : stopped
+
+- name: start network
+  systemd:
+    name   : network
+    enabled: yes
+    state  : started
