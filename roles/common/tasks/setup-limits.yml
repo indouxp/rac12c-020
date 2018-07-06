@@ -1,0 +1,9 @@
+---
+
+  - name: copy oracle-database-server-12cR2-preinstall.conf
+    copy:
+      src     : ../files/oracle-database-server-12cR2-preinstall.conf
+      dest    : /etc/security/limits.d/oracle-database-server-12cR2-preinstall.conf
+      mode    : 0644
+      owner   : root
+      group   : root
