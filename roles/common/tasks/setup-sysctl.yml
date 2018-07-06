@@ -12,6 +12,5 @@
     shell       : /sbin/sysctl -p
     register    : result
     changed_when: False
-
-  - name: ステータス
+  - name: sysctl -p ステータス
     debug      : var=result.rc
