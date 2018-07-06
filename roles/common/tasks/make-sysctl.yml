@@ -2,11 +2,11 @@
 
   - name: copy 98-oracle.conf
     copy:
-      src  : ../files/98-oracle.conf
-      dest : /etc/sysctl.d/98-oracle.conf
-      mode : 0644
-      owner: root
-      group: root
+      src     : ../files/98-oracle.conf
+      dest    : /etc/sysctl.d/98-oracle.conf
+      mode    : 0644
+      owner   : root
+      group   : root
 
   - name: sysctl -p
     shell       : /sbin/sysctl -p
