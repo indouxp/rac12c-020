@@ -1,0 +1,6 @@
+---
+# パッケージインストール
+
+  - name: yum unzip
+    yum: name=unzip state=latest
+
