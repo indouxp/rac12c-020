@@ -1,0 +1,15 @@
+---
+
+  - name: setup /etc/chrony.conf
+    lineinfile:
+      dest: /etc/chrony.conf
+      insertbefore: '^server 0.centos.pool.ntp.org iburst'
+      line: "{{ item }}"
+    with_items:
+      - 'server 192.168.0.254 iburst'
+
+  - name: chrony
+    systemd:
+      name        : chronyd
+      state       : restarted
+      enabled     : yes 
