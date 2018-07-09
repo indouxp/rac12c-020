@@ -14,5 +14,5 @@
     - import_tasks: roles/common/tasks/install-rpms-01.yml
     - import_tasks: roles/common/tasks/add-group.yml
     - import_tasks: roles/common/tasks/add-oracle.yml
-
-
+    - import_tasks: roles/common/tasks/setup-selinux.yml
+    - import_tasks: roles/common/tasks/setup-hosts.yml
