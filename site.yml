@@ -17,3 +17,4 @@
     - import_tasks: roles/common/tasks/setup-selinux.yml
     - import_tasks: roles/common/tasks/setup-hosts.yml
     - import_tasks: roles/common/tasks/setup-chrony.yml
+    - import_tasks: roles/common/tasks/setup-firewalld.yml
