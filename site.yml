@@ -12,4 +12,7 @@
     - import_tasks: roles/common/tasks/setup-limits.yml
     - import_tasks: roles/common/tasks/install-rpms-00.yml
     - import_tasks: roles/common/tasks/install-rpms-01.yml
+    - import_tasks: roles/common/tasks/add-group.yml
+    - import_tasks: roles/common/tasks/add-oracle.yml
+
 

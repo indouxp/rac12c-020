@@ -1,5 +1,5 @@
 ---
-# インストール
+# パッケージインストール for Oracle
 
   - name: yum compat-libcap1
     yum: name=compat-libcap1 state=latest
