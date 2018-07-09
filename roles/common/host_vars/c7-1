@@ -1,0 +1,5 @@
+---
+
+  oracle_unqname: CDBRAC
+  oracle_sid: cdbrac1
+  asm_sid: +ASM1

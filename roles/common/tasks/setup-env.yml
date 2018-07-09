@@ -1,0 +1,17 @@
+---
+
+  - name: grid_env
+    template:
+      src: ../templates/grid_env.j2
+      dest: /home/oracle/grid_env
+      owner: oracle
+      group: oinstall
+      mode: 0644
+
+  - name: db_env
+    template:
+      src: ../templates/db_env.j2
+      dest: /home/oracle/db_env
+      owner: oracle
+      group: oinstall
+      mode: 0644

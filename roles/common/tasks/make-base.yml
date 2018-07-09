@@ -1,0 +1,26 @@
+---
+
+  - name: /u01/app/oracle/product/12.2.0.1/db_1
+    file:
+      dest : /u01/app/oracle/product/12.2.0.1/db_1
+      state: directory
+      owner: oracle
+      group: oinstall
+      mode : 0775
+
+  - name: /u01/app/12.2.0.1/grid
+    file:
+      dest : /u01/app/12.2.0.1/grid
+      state: directory
+      owner: oracle
+      group: oinstall
+      mode : 0775
+
+  - name: /u01
+    file:
+      dest   : /u01
+      state  : directory
+      owner  : oracle
+      group  : oinstall
+      mode   : 0775
+      recurse: yes

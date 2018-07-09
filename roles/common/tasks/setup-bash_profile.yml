@@ -1,0 +1,9 @@
+---
+
+  - name: .bash_profile
+    template:
+      src: ../templates/.bash_profile.j2
+      dest: /home/oracle/.bash_profile
+      owner: oracle
+      group: oinstall
+      mode: 0644
