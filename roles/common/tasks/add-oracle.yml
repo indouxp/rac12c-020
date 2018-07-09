@@ -1,0 +1,9 @@
+---
+
+  - name: add oracle user
+    user:
+      name : oracle
+      uid  : 54321
+      state: present
+      group: oinstall
+      groups: dba,oper,backupdba,dgdba,kmdba,asmdba,asmoper,asmadmin,racdba
