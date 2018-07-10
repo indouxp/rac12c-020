@@ -1,0 +1,1 @@
+minimal installなので、iptablesを削除し、firewalldを導入
