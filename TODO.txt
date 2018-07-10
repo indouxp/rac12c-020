@@ -1,1 +1,15 @@
-minimal installなので、iptablesを削除し、firewalldを導入 <-- これは、t3600か
+rac140.sh
+sharedisk fdisk
+/sbin/partprobe
+swap
+/usr/sbin/smartctl(smartmontools.x86_64)
+1号機のみlinuxx64_12201_grid_home.zipを、/u01/app/12.2.0.1/gridに展開
+/cv/rpm/cvuqdisk
+ssh oracle@c7-1
+ssh oracle@c7-1.tsystem.gr.jp
+ssh oracle@c7-2
+ssh oracle@c7-21.tsystem.gr.jp
+yum groupinstall "Server with GUI"
+  
+/u01/app/12.2.0.1/grid/runcluvfy.sh stage -pre crsinst -n c7-1,c7-2 -verbose
+
