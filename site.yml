@@ -1,6 +1,7 @@
 ---
 - hosts:
   - c7-1
+  - c7-2
 
   become: yes
   vars_files:
@@ -8,17 +9,17 @@
     - roles/common/host_vars/{{ ansible_hostname }}
 
   tasks:
-#    - import_tasks: roles/common/tasks/setup-network.yml
-#    - import_tasks: roles/common/tasks/setup-sysctl.yml
-#    - import_tasks: roles/common/tasks/setup-limits.yml
-#    - import_tasks: roles/common/tasks/install-rpms-00.yml
-#    - import_tasks: roles/common/tasks/install-rpms-01.yml
-#    - import_tasks: roles/common/tasks/add-group.yml
-#    - import_tasks: roles/common/tasks/add-oracle.yml
-#    - import_tasks: roles/common/tasks/setup-selinux.yml
-#    - import_tasks: roles/common/tasks/setup-hosts.yml
-#    - import_tasks: roles/common/tasks/setup-chrony.yml
-#    - import_tasks: roles/common/tasks/setup-firewalld.yml
-#    - import_tasks: roles/common/tasks/make-base.yml
+    - import_tasks: roles/common/tasks/setup-network.yml
+    - import_tasks: roles/common/tasks/setup-sysctl.yml
+    - import_tasks: roles/common/tasks/setup-limits.yml
+    - import_tasks: roles/common/tasks/install-rpms-00.yml
+    - import_tasks: roles/common/tasks/install-rpms-01.yml
+    - import_tasks: roles/common/tasks/add-group.yml
+    - import_tasks: roles/common/tasks/add-oracle.yml
+    - import_tasks: roles/common/tasks/setup-selinux.yml
+    - import_tasks: roles/common/tasks/setup-hosts.yml
+    - import_tasks: roles/common/tasks/setup-chrony.yml
+    - import_tasks: roles/common/tasks/setup-firewalld.yml
+    - import_tasks: roles/common/tasks/make-base.yml
     - import_tasks: roles/common/tasks/setup-bash_profile.yml
     - import_tasks: roles/common/tasks/setup-env.yml

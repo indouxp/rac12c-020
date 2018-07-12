@@ -3,11 +3,11 @@
 - name: disable NetworkManager
   systemd:
     name   : NetworkManager
-    enabled: no
-    state  : stopped
-
-- name: start network
-  systemd:
-    name   : network
     enabled: yes
     state  : started
+
+#- name: start network
+#  systemd:
+#    name   : network
+#    enabled: yes
+#    state  : started
